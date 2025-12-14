@@ -2,57 +2,13 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cuenta regresiva para Navidad</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background: url('https://images.unsplash.com/photo-1608889175094-7d9c1b9e9f3d?auto=format&fit=crop&w=1950&q=80') no-repeat center center fixed;
-      background-size: cover;
-      color: #fff;
-      text-align: center;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      height: 100vh;
-    }
-    h1 {
-      font-size: 3em;
-      text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
-    }
-    #countdown {
-      font-size: 2em;
-      margin-top: 20px;
-      padding: 20px;
-      background: rgba(0,0,0,0.5);
-      border-radius: 12px;
-      display: inline-block;
-    }
-  </style>
 </head>
 <body>
   <h1>🎅 Cuenta regresiva para Navidad 🎄</h1>
-  <div id="countdown"></div>
-
-  <script>
-    function updateCountdown() {
-      const christmas = new Date("Dec 25, 2025 00:00:00").getTime();
-      const now = new Date().getTime();
-      const diff = christmas - now;
-
-      const days = Math.floor(diff / (1000 * 60 * 60 * 24));
-      const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-      const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
-      const seconds = Math.floor((diff % (1000 * 60)) / 1000);
-
-      document.getElementById("countdown").innerHTML =
-        days + " días " + hours + "h " + minutes + "m " + seconds + "s ";
-    }
-
-    setInterval(updateCountdown, 1000);
-    updateCountdown();
-  </script>
+  <p>10 días 5h 18m 9s</p>
 </body>
 </html>
+
+
 
