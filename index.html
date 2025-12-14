@@ -4,12 +4,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cuenta regresiva para Navidad</title>
+  <!-- Tipografía festiva desde Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Mountains+of+Christmas&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background: #ffffff; /* Fondo blanco minimalista */
-      color: #333;
+      font-family: 'Mountains of Christmas', cursive;
+      background: url('https://images.unsplash.com/photo-1608889175094-7d9c1b9e9f3d?auto=format&fit=crop&w=1950&q=80') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
       text-align: center;
       display: flex;
       flex-direction: column;
@@ -17,14 +20,15 @@
       height: 100vh;
     }
     h1 {
-      font-size: 2.5em;
-      margin-bottom: 20px;
+      font-size: 3em;
+      text-shadow: 3px 3px 8px rgba(0,0,0,0.7);
     }
     #countdown {
       font-size: 2em;
-      background: #f0f0f0;
+      margin-top: 20px;
       padding: 20px;
-      border-radius: 10px;
+      background: rgba(0,0,0,0.5);
+      border-radius: 12px;
       display: inline-block;
     }
     footer {
@@ -32,8 +36,8 @@
       bottom: 10px;
       width: 100%;
       text-align: center;
-      font-size: 0.9em;
-      color: #777;
+      font-size: 1em;
+      color: #ddd;
     }
   </style>
 </head>
@@ -41,7 +45,7 @@
   <h1>🎅 Cuenta regresiva para Navidad 🎄</h1>
   <div id="countdown"></div>
 
-  <footer>Hecho con ❤️ por Tomas</footer>
+  <footer>Hecho con 🎁 por Tomas</footer>
 
   <script>
     function updateCountdown() {
@@ -49,7 +53,4 @@
       const now = new Date().getTime();
       const diff = christmas - now;
 
-      const days = Math.floor(diff / (1000 * 60 * 60 * 24));
-      const hours = Math.floor((diff % (1000 * 60 * 
-
-
+      const days = Math.floor
