@@ -2,13 +2,54 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cuenta regresiva para Navidad</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #ffffff; /* Fondo blanco minimalista */
+      color: #333;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 100vh;
+    }
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+    }
+    #countdown {
+      font-size: 2em;
+      background: #f0f0f0;
+      padding: 20px;
+      border-radius: 10px;
+      display: inline-block;
+    }
+    footer {
+      position: absolute;
+      bottom: 10px;
+      width: 100%;
+      text-align: center;
+      font-size: 0.9em;
+      color: #777;
+    }
+  </style>
 </head>
 <body>
   <h1>🎅 Cuenta regresiva para Navidad 🎄</h1>
-  <p>10 días 5h 18m 9s</p>
-</body>
-</html>
+  <div id="countdown"></div>
 
+  <footer>Hecho con ❤️ por Tomas</footer>
+
+  <script>
+    function updateCountdown() {
+      const christmas = new Date("Dec 25, 2025 00:00:00").getTime();
+      const now = new Date().getTime();
+      const diff = christmas - now;
+
+      const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((diff % (1000 * 60 * 
 
 
