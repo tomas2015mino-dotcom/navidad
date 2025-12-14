@@ -2,25 +2,32 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cuenta regresiva para Navidad</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background: linear-gradient(to bottom, #ff0000, #008000);
-      color: white;
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: url('https://images.unsplash.com/photo-1544025162-d76694265947?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
       text-align: center;
-      padding-top: 100px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 100vh;
     }
     h1 {
       font-size: 3em;
-      margin-bottom: 20px;
+      text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
     }
     #countdown {
       font-size: 2em;
-      background: rgba(0,0,0,0.4);
-      display: inline-block;
+      margin-top: 20px;
       padding: 20px;
-      border-radius: 10px;
+      background: rgba(0,0,0,0.5);
+      border-radius: 12px;
+      display: inline-block;
     }
   </style>
 </head>
@@ -48,3 +55,4 @@
   </script>
 </body>
 </html>
+
